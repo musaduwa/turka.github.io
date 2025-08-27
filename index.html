@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TURKA ANIMAL DRUGS ENTERPRISES</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-green-700 text-white p-6 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">TURKA ANIMAL DRUGS ENTERPRISES</h1>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6 text-lg">
+          <li><a href="#sales" class="hover:underline">Sales</a></li>
+          <li><a href="#marketing" class="hover:underline">Marketing</a></li>
+          <li><a href="#tech" class="hover:underline">Tech</a></li>
+          <li><a href="#services" class="hover:underline">Services</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <nav id="mobile-menu" class="md:hidden hidden mt-4">
+      <ul class="flex flex-col space-y-4 text-lg">
+        <li><a href="#sales" class="hover:underline">Sales</a></li>
+        <li><a href="#marketing" class="hover:underline">Marketing</a></li>
+        <li><a href="#tech" class="hover:underline">Tech</a></li>
+        <li><a href="#services" class="hover:underline">Services</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-green-100 py-16 text-center px-4">
+    <h2 class="text-4xl font-bold text-green-800 mb-4">Empowering Agriculture, Enhancing Lives</h2>
+    <p class="text-lg max-w-2xl mx-auto">TURKA ANIMAL DRUGS ENTERPRISES is a multi-agro company dedicated to livestock, crops, animal feed, and modern farm solutions.</p>
+  </section>
+
+  <!-- Sales Department -->
+  <section id="sales" class="max-w-6xl mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold text-green-700 mb-6">Sales Department</h3>
+    <p class="text-lg mb-4">We provide high-quality animal drugs and farm products to ensure the well-being and productivity of livestock and crops.</p>
+    <ul class="list-disc pl-6 text-lg">
+      <li>Animal Drugs</li>
+      <li>Farm Inputs</li>
+      <li>Fertilizers & Pesticides</li>
+    </ul>
+  </section>
+
+  <!-- Marketing Department -->
+  <section id="marketing" class="bg-gray-100 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-green-700 mb-6">Marketing Department</h3>
+      <p class="text-lg mb-4">Our marketing team works closely with farmers, distributors, and communities to promote sustainable agriculture practices.</p>
+      <ul class="list-disc pl-6 text-lg">
+        <li>Farm Product Awareness</li>
+        <li>Community Engagement</li>
+        <li>Distribution Networks</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Tech Department -->
+  <section id="tech" class="max-w-6xl mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold text-green-700 mb-6">Tech Department</h3>
+    <p class="text-lg mb-4">We integrate modern technology into agriculture for improved productivity and efficiency.</p>
+    <ul class="list-disc pl-6 text-lg">
+      <li>Smart Farming Solutions</li>
+      <li>Data-Driven Farm Management</li>
+      <li>Research & Development</li>
+    </ul>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-gray-100 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-green-700 mb-6">Our Services</h3>
+      <div class="grid md:grid-cols-2 gap-8 text-lg">
+        <div class="p-6 bg-white rounded-xl shadow-md">
+          <h4 class="font-bold text-xl mb-2">Crops Production</h4>
+          <p>We cultivate high-quality crops to support food security and sustainable farming practices.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow-md">
+          <h4 class="font-bold text-xl mb-2">Animal Feed Formulation</h4>
+          <p>Our feeds are designed to optimize livestock growth, health, and productivity.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow-md">
+          <h4 class="font-bold text-xl mb-2">Animal Production</h4>
+          <p>We specialize in cattle fattening, fisheries, and poultry farming to meet market demands.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow-md">
+          <h4 class="font-bold text-xl mb-2">Farm Consultancy</h4>
+          <p>We provide expert advice and support to farmers for maximizing agricultural efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold text-green-700 mb-6">Contact Us</h3>
+    <p class="text-lg mb-4">Get in touch with us for inquiries, partnerships, or support.</p>
+    <form class="grid gap-4 max-w-xl">
+      <input type="text" placeholder="Your Name" class="p-3 border rounded-md" required>
+      <input type="email" placeholder="Your Email" class="p-3 border rounded-md" required>
+      <textarea placeholder="Your Message" class="p-3 border rounded-md" rows="5" required></textarea>
+      <button type="submit" class="bg-green-700 text-white py-3 rounded-md hover:bg-green-800">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-6 text-center">
+    <p>&copy; 2025 TURKA ANIMAL DRUGS ENTERPRISES. All rights reserved.</p>
+  </footer>
+</body>
+</html>
